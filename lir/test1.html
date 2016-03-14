@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Test</title>
+    </head>
+    <body>
+        <select>
+            <option value="1">First</option>
+        </select>
+        <script>
+            var sel = document.getElementsByTagName("select")[0],
+                _sel = sel.cloneNode(true),
+                span = document.createElement("span");
+            span.style.border = "1px solid red";
+            //span.style.cssText = "border: 1px solid red";
+            span.appendChild(_sel);
+            sel.parentNode.replaceChild(span, sel);
+            // elem.insertAdjacentHTML("beforeBegin","<span style=\"border: 1px solid red\">*</span$amp;>amp;$quot;); 
+        </script>
+    </body>
+</html>

@@ -10,3 +10,5 @@
 #haoren
 
 #2016
+
+## git add -u && git commit -m "change something" && git push origin master
